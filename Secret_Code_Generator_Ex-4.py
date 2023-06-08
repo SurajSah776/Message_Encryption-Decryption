@@ -1,31 +1,11 @@
-# Secret Code Generator
-''' Write a python program to translate a message into secret code language.
-to translate normal English into secret code language
+# Secret Message Code Generator
+# Both Encryption and Decryption
 
-    Coding:
-Use the rules below
-if the word contains at least 3 characters,
-    remove the first letter and append it at the end
-    now append three random characters at the starting and the end
-else:
-    simply reverse the string
-
-    Decoding:
-if the word contains less than 3 characters,
-    reverse it
-else:
-    remove 3 random characters from start and end. Now remove the last letter and add it to the beginning
-    
-#Your program should ask whether you want to code or decode
-'''
-
-# Program
+# Program Code:
 import random
 import string
 
 # Function to generate 'n' random letters
-
-
 def randomLetters(n):
     randomLetters = ""
     for x in range(n):
@@ -40,8 +20,6 @@ choice = input("Enter 1 for Coding and 2 for Decoding : ")
 coding = True if (choice == "1") else False
 
 msgWords = message.split(" ")  # Gives the list of all the words
-# print("Splitted Words : ", msgWords)
-
 
 # Coding the Message
 if (coding):
@@ -56,7 +34,6 @@ if (coding):
             first = randomLetters(key)
             last = randomLetters(key)
             newWord = first+word+last
-            # OR  newWord = first + word[1:] + word[0] + last
             codeWords.append(newWord)  # Putting the code words in list
         else:
             newWord = word[::-1]
