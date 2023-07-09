@@ -1,19 +1,32 @@
-# Message_Encryption-Decryption
-''' Write a python program to translate a message into secret code language.
+<h1 align="center" id="title">Message-Encryption-Decryption</h1>
 
-Rules to translate normal English message into secret code language
-------- Coding: -----------
+<p align="center">
+  <img
+    src="https://socialify.git.ci/SurajSah776/Message_Encryption-Decryption/image?font=Jost&language=1&pattern=Solid&stargazers=1&theme=Dark"
+    alt="project-image"
+  />
+</p>
+
+<pre id="description">
+  Given, Rules to translate normal English message into secret code language
+<h3>------- Coding: -----------</h3>
 -> Use the rules below
+   
 If the word contains at least 3 characters,
     * remove the first letter and append it at the end
     * now append three random characters at the starting and the end
-else:
+else:<br>
     * simply reverse the string
 
-------- Decoding: -------
+<h3>------- Decoding: -------</h3>
     * if the word contains less than 3 characters, reverse it
 else:
     * remove 3 random characters from start and end. Now remove the last letter and add it to the beginning
-    
-#Your program should ask whether you want to code or decode and you can enter the encryption / decryption key 
-'''
+</pre>
+
+<h2>💻 Built with</h2>
+<h2>Python</h2>
+
+
+
+
